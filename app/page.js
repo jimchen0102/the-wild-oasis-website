@@ -1,15 +1,7 @@
-export default async function Home() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/albums");
-  const albums = await response.json();
-
+export default function Home() {
   return (
-    <>
-      {albums.map((album) => (
-        <div key={album.id}>
-          <p>{album.title}</p>
-          <p>{album.id}</p>
-        </div>
-      ))}
-    </>
+    <div>
+      <h1>The Wild Oasis. Welcome to paradise.</h1>
+    </div>
   );
 }
